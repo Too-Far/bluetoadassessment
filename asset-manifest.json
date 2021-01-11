@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/bluetoadassessment/static/css/main.fddbcf05.chunk.css",
+    "main.js": "/bluetoadassessment/static/js/main.6b28437c.chunk.js",
+    "main.js.map": "/bluetoadassessment/static/js/main.6b28437c.chunk.js.map",
+    "runtime-main.js": "/bluetoadassessment/static/js/runtime-main.e8f35a27.js",
+    "runtime-main.js.map": "/bluetoadassessment/static/js/runtime-main.e8f35a27.js.map",
+    "static/js/2.2532bcfb.chunk.js": "/bluetoadassessment/static/js/2.2532bcfb.chunk.js",
+    "static/js/2.2532bcfb.chunk.js.map": "/bluetoadassessment/static/js/2.2532bcfb.chunk.js.map",
+    "static/js/3.b1bb284c.chunk.js": "/bluetoadassessment/static/js/3.b1bb284c.chunk.js",
+    "static/js/3.b1bb284c.chunk.js.map": "/bluetoadassessment/static/js/3.b1bb284c.chunk.js.map",
+    "index.html": "/bluetoadassessment/index.html",
+    "static/css/main.fddbcf05.chunk.css.map": "/bluetoadassessment/static/css/main.fddbcf05.chunk.css.map",
+    "static/js/2.2532bcfb.chunk.js.LICENSE.txt": "/bluetoadassessment/static/js/2.2532bcfb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e8f35a27.js",
+    "static/js/2.2532bcfb.chunk.js",
+    "static/css/main.fddbcf05.chunk.css",
+    "static/js/main.6b28437c.chunk.js"
+  ]
+}
