@@ -1,0 +1,66 @@
+.wrapper .searchBox .closeIcon {
+  position: relative;
+  padding: 10px;
+}
+.submitBtn {
+  border-radius: 16px;
+  background-color: #02b3e3;
+  color: white;
+  margin-top: 0.8em;
+  height: 30px;
+  width: 80px;
+}
+.wrapper {
+  width: 500px;
+  margin: auto;
+  margin-bottom: 1em;
+}
+.searchBox {
+  width: 80%;
+  border: 1px solid #02b3e3;
+  outline: 0;
+  border-radius: 15px;
+  height: 30px;
+  text-align: center;
+}
+.searchBox:focus {
+  box-shadow: 0 0 15px 4px #02b3e3;
+  border: 2px solid #bebede;
+}
+.closeIcon {
+  border: 1px solid transparent;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+}
+.closeIcon:after {
+  content: "X";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  z-index: 1;
+  right: 35px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 2px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  font-size: 12px;
+  box-shadow: 0 0 2px #e50f0f;
+  cursor: pointer;
+}
+.searchBox:not(:valid) ~ .closeIcon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+}
