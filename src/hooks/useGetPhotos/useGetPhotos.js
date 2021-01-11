@@ -8,24 +8,28 @@ function useGetPhotos() {
   const retreivePhotos = async (query) => {
     const clientId = process.env.REACT_APP_UNSPLASH_ID;
     setPhotoList([]);
-    await axios
-      .get(
-        `https://api.unsplash.com/search/photos/?page=${page}&per_page=20&query=${query}&client_id=${clientId}`
-      )
-      .then((res) => {
-        const resultArray = res.data.results;
-        resultArray.map((photo) =>
-          setPhotoList((photoList) => [
-            ...photoList,
-            {
-              url: photo.urls.regular,
-              altDesc: photo.alt_description,
-              id: photo.id,
-            },
-          ])
-        );
-      });
-    setPage(page + 1);
+    try {
+      await axios
+        .get(
+          `https://api.unsplash.com/search/photos/?page=${page}&per_page=20&query=${query}&client_id=${clientId}`
+        )
+        .then((res) => {
+          const resultArray = res.data.results;
+          resultArray.map((photo) =>
+            setPhotoList((photoList) => [
+              ...photoList,
+              {
+                url: photo.urls.regular,
+                altDesc: photo.alt_description,
+                id: photo.id,
+              },
+            ])
+          );
+        });
+      setPage(page + 1);
+    } catch (err) {
+      console.error(`Error with API call; ${err}`);
+    }
   };
   return [photoList, retreivePhotos];
 }
