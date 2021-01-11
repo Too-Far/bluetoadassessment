@@ -19,7 +19,7 @@ function Header(props) {
       <h1>Sample Search App</h1>
       <form onSubmit={handleSubmit}>
         <input
-          type="search"
+          type="text"
           name="query"
           onChange={(e) => {
             setQuery(e.target.value);
