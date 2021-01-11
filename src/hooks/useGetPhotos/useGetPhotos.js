@@ -11,7 +11,7 @@ function useGetPhotos() {
     try {
       await axios
         .get(
-          `https://api.unsplash.com/search/photos/?page=${page}&per_page=20&query=${query}&client_id=${clientId}`
+          `https://api.unsplash.com/search/photos/?page=${page}&per_page=20&query=${query}&content_filter=high&client_id=${clientId}`
         )
         .then((res) => {
           const resultArray = res.data.results;
