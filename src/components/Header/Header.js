@@ -15,24 +15,26 @@ function Header(props) {
   };
 
   return (
-    <div className={styles.wrapper}>
-      <h1>Sample Search App</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="query"
-          onChange={(e) => {
-            setQuery(e.target.value);
-          }}
-          required
-          className={styles.searchBox}
-          placeholder="Enter search term"
-        />
-        <button className={styles.closeIcon} type="reset"></button>
-      </form>
-      <button className={styles.submitBtn} onClick={handleSubmit}>
-        Submit
-      </button>
+    <div className={styles.outer}>
+      <div className={styles.wrapper}>
+        <h1>Sample Search App</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="query"
+            onChange={(e) => {
+              setQuery(e.target.value);
+            }}
+            required
+            className={styles.searchBox}
+            placeholder="Enter search term"
+          />
+          <button className={styles.closeIcon} type="reset"></button>
+        </form>
+        <button className={styles.submitBtn} onClick={handleSubmit}>
+          Submit
+        </button>
+      </div>
     </div>
   );
 }
